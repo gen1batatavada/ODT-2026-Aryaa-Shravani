@@ -52,7 +52,7 @@ By the final review, this README should clearly show:
 # 1. Team Identity
 
 ## 1.1 Studio / Group Name
-`[gen1batanavadapie?`
+`gen1batanavadapie?`
 
 ## 1.2 Team Members
 
