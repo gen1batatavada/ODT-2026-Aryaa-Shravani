@@ -15,7 +15,7 @@
 ## Fork and rename this repository
 After forking this repository, rename it using the format:
 
-`ODT-2026-TeamName`
+`ODT-2026-Aryaa&Shravani`
 
 ### Example
 `ODT-2026-PixelWizards`
