@@ -632,14 +632,15 @@ Expected outcomes:
 |---|---|---|---|---|---|
 | `[Example: Bluetooth disconnects]` | `Technical` | `Medium` | `High` | `[Fallback interaction / simplify connection flow]` | `[Name]` |
 | `[Example: Structure breaks during play]` | `Mechanical` | `Medium` | `High` | `[Reinforce joints / change material]` | `[Name]` |
-| `[Risk]` | `[Technical / Material / Time / Gameplay]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
+| `Power supply doesnt provide consistent power` | `Technical` | `Medium` | `Low` | `fix the power supply` | `[Name]` |
 | `[Risk]` | `[Type]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
 
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-`[Write here]`
+`The grid not registering as a grid.
+Balancing speed and reaction time to make the game challenging but fair.`
 
 ---
 
@@ -650,19 +651,36 @@ What is the single biggest uncertainty in your project at this stage?
 | What Needs Testing | How You Will Test It | Success Condition |
 |---|---|---|
 | `[Bluetooth connection]` | `[Method]` | `[What counts as success?]` |
-| `[Mechanism movement]` | `[Method]` | `[What counts as success?]` |
+| `[Mechanism movement]` | `` | `[What counts as success?]` |
 | `[Sensor behavior]` | `[Method]` | `[What counts as success?]` |
 | `[App communication]` | `[Method]` | `[What counts as success?]` |
+`LED grid movement` | `Run the code and observe puck movement across grid `| `Puck moves smoothly, no glitches, correct position mapping`
+
+`Button input` | `Press each button individually and during gameplay` | `Correct button press reflects puck, no delay, no false triggers`
+
+`Multiple button press detection` | `Press 2+ buttons at once` | `System detects it and reduces life correctly`
+
+`Goal detection and timing` | `Let puck reach goal and do not press button` | `Life reduces after 0.5 seconds`
+
+`Reflection logic` | `Press correct button at goal` | `Puck changes direction correctly and continues moving`
+
+`Boundary collision` | `Observe puck hitting top and bottom edges` | `Puck reflects without going out of bounds`
+
+`Life system` | `Play full round and track lives` | `Lives decrease correctly and display updates on LED strip`
+
+`Game reset` | `Let one player lose all lives` | `Winner is shown and game resets properly`
+
+`Buzzer feedback` | `Trigger correct and wrong actions` | `Different sounds play for mistakes and goal events`
 
 ## 16.2 Playtesting Plan
 
 | Question | How You Will Check |
 |---|---|
-| Do players understand what to do? | `[Method]` |
-| Is the interaction satisfying? | `[Method]` |
-| Do players want another turn? | `[Method]` |
-| Is the challenge balanced? | `[Method]` |
-| Is the response clear and immediate? | `[Method]` |
+| Do players understand what to do? | `user testing with rule guide wriyten` |
+| Is the interaction satisfying? | `Watch player reactions during gameplay, look for excitement, focus, and quick reactions` |
+| Do players want another turn? | `check if players automatically want to start again when the code resets` |
+| Is the challenge balanced? | `Observe if players lose too quickly or too slowly, adjust reaction time or speed if needed` |
+| Is the response clear and immediate? | `Watch how players react to LED and sound feedback, ensure players understand what caused a mistake or success` |
 
 ## 16.3 Testing and Debugging Log
 
