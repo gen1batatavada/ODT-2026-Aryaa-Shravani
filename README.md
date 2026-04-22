@@ -216,7 +216,7 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [ ] Electronics-based
+- [ .] Electronics-based
 - [ ] Mechanical
 - [ ] Sensor-based
 - [ ] App-connected
