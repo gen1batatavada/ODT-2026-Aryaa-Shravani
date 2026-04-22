@@ -62,10 +62,10 @@ By the final review, this README should clearly show:
 | `Shravani Budage` | `Fabrication` | `Mechanics` | `[Write here]` |
 
 ## 1.3 Project Title
-`[The Rupinator]`
+`The Rupinator`
 
 ## 1.4 One-Line Pitch
-`[Describe your project in one sentence]`
+`Describe your project in one sentence`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -120,8 +120,8 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `Game: ATARI BREAKOUT ` | `https://elgoog.im` | `Reflection mechanism` |
+| `Game: AIR HOCKEY ` | `NA` | `Goal mechanism, flow of puck` |
 | `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
 
 ## 3.2 Original Twist
