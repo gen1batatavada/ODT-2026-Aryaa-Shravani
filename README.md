@@ -713,7 +713,7 @@ Include:
 - revisions.
 
 **Response:**  
-`[Write here]`
+`After the led strips were soldered together to form a grid, we built a box made of foam board around it to give it an arcade game feel. we then proceeded to cover it with black chart paper and attach the remaining electric components on it. we were able to make space beneath the box for all the wire coonections. finally we addded the tactile buttons and some colour as the finishing toches.  `
 
 ## 17.2 Build Photos
 Add photos throughout the project.
