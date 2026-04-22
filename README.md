@@ -65,7 +65,7 @@ By the final review, this README should clearly show:
 `The Rupinator`
 
 ## 1.4 One-Line Pitch
-`Describe your project in one sentence`
+`A fast paced LED game where players react quickly to defend their goal using buttons.`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -75,7 +75,10 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[Write here]`
+`The Rupinator is a two player interactive LED based game inspired by air hockey and arcade reflex games. A moving light represents the puck, which travels across a grid. Players must react quickly by pressing the correct button to deflect it back.
+The game focuses on speed, awareness, and competition. Players lose lives if they fail to react in time or press incorrectly. 
+The combination of light, sound, and fast gameplay makes it exciting and replayable.
+The system uses an LED grid, tactile buttons, and a buzzer to create a responsive and engaging experience.`
 
 ---
 
@@ -101,7 +104,8 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[Write here]`
+`The experience is a fast paced reaction game. Players feel pressure, urgency, and competition.
+Players will feel excitement and tension as the puck moves faster and the time to react decreases. The game is engaging because it is simple to understand but tricky to master. Players will want to try again to improve their timing and beat their opponent.`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -109,7 +113,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[Write here]`
+`We are designing this project as if we are a small creative studio making a game for arcade enthusiasts and people who enjoy playing 1v1 competitive games`
 
 ---
 
@@ -128,7 +132,7 @@ List what inspired the project.
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+`Unlike traditional air hockey, this game uses light instead of a physical puck and replaces paddles with button based interaction, making the puck move digitally. The addition of reaction time limits, lives, and sligtly glitched routes makes it more intense and unpredictable.`
 
 ---
 
@@ -144,7 +148,7 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Write here]`
+`puck moves → player reacts → button press → puck reflects → speed increases → repeat`
 
 ## 4.2 Intended Player / Audience
 
@@ -152,29 +156,32 @@ Examples:
 |---|---|
 | Who is this for? | `Arcade enthusiasts` |
 | Age range | `5+` |
-| Solo or multiplayer | `Multiplayer` |
+| Solo or multiplayer | `Multiplayer [2 player]` |
 | Expected duration of one round | `1 minute 30 seconds` |
-| What should the player feel? | `[Write here]` |
-| Is explanation required before use? | `[Write here]` |
+| What should the player feel? | `competitive and stimulated` |
+| Is explanation required before use? | `yes` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[How does the player first encounter it?]`
-2. **Start:** `[How do they begin?]`
-3. **First Action:** `[What do they do first?]`
-4. **Main Interaction:** `[What keeps happening during use?]`
-5. **System Response:** `[How does the project respond?]`
-6. **Win / Lose / End Condition:** `[How does one round end?]`
-7. **Reset:** `[How does the next round begin?]`
+1. **Approach:** `Player reads the rules`
+2. **Start:** `Both players press a button to get ready`
+3. **First Action:** `Puck starts moving from center`
+4. **Main Interaction:** `Players press buttons to deflect puck `
+5. **System Response:** `LEDs update and buzzer gives feedback`
+6. **Win / Lose / End Condition:** `Player loses all lives`
+7. **Reset:** `Game restarts automatically after eiher player loses`
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
-- `[Rule 3]`
-- `[Rule 4]`
+- `Rule 1:You must play with one hand only.`
+- `Rule 2: Both player must press any button to begin. `
+- `Rule 3: The blue light is the puck.`
+- `Rule 4: You have 5 lives.`
+- `Rule 5:Defend your goal by pressing the respective button.`
+- `Rule 6:You have HALF a second to react before you lose a life.`
+- `Rule 7:Pressing more that 1 button at once costs you lives.`
 
 ---
 
@@ -183,24 +190,24 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
-- [ ] `[Condition 3]`
-- [ ] `[Condition 4]`
-- [ ] `[Condition 5]`
+- [ ] `[Condition 1: Puck moves across LED grid correctly  ]`
+- [ ] `[Condition 2: Buttons respond accurately ]`
+- [ ] `[Condition 3: Lives decrease correctly]`
+- [ ] `[Condition 4: Game resets after win  ]`
+- [ ] `[Condition 5: Sound feedback works ]`
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+`A working LED grid with one button per player.`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
-- `[Stretch feature 3]`
+- `A box unit around the leds to give it an arcade game feel`
+- `Colour coded buttons and aesthetic elements`
+- `Sound feedback with buzzer`
 
 ---
 
