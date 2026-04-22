@@ -216,17 +216,17 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [ .] Electronics-based
-- [ ] Mechanical
+- [x] Electronics-based
+- [x] Mechanical
 - [ ] Sensor-based
 - [ ] App-connected
 - [ ] Motorized
-- [ ] Sound-based
-- [ ] Light-based
+- [x] Sound-based
+- [x] Light-based
 - [ ] Screen/UI-based
-- [ ] Fabricated structure
-- [ ] Game logic based
-- [ ] Installation / tabletop experience
+- [x] Fabricated structure
+- [x] Game logic based
+- [x] Installation / tabletop experience
 - [ ] Other: `[Write here]`
 
 ## 6.2 High-Level System Description
@@ -240,7 +240,10 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`[Write here]`
+`The system is based on a coordinate grid mapped onto the LED matrix (14 × 10). Each LED represents a position (x, y), and the puck is tracked as a moving point across this grid.
+The puck moves using directional vectors (dx, dy), allowing diagonal motion across the board. It continues in a straight path until it reaches a boundary. When it hits the top or bottom edges, it reflects by reversing its vertical direction. When it reaches a player’s goal side, it can either be reflected based on button input or result in a life loss if no correct input is given within the reaction time.
+The movement is step based, meaning the puck updates its position frame by frame according to its direction.
+The LED grid visually represents this movement, making the abstract coordinate system visible as a moving light across the board.`
 
 ## 6.3 Input / Output Map
 
