@@ -249,10 +249,11 @@ The LED grid visually represents this movement, making the abstract coordinate s
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| `Buttons` | Input | `Player actions ` |
+| `ESP32 ` | Processing | `Game logic` |
+| `LED` | Output | `Visual feedback ` |
+| `Buzzer` | Output | `Sound feedback` |
+| `[Mechanical Assembly]` | Physical Action | `tactile buttons and wire connections` |
 
 ---
 
@@ -284,10 +285,10 @@ Add a sketch with labels showing:
 
 | Dimension | Value |
 |---|---|
-| Length | `[Write here]` |
-| Width | `[Write here]` |
-| Height | `[Write here]` |
-| Estimated weight | `[Write here]` |
+| Length | `16in` |
+| Width | `12in` |
+| Height | `4in` |
+| Estimated weight | `500gm` |
 
 ---
 
@@ -307,13 +308,13 @@ Check all that apply.
 - [ ] Wheels
 - [ ] Sliders
 - [ ] Levers
-- [ ] Not applicable
+- [x] Not applicable
 
 ## 8.2 Mechanical Description
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+`na`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -324,21 +325,21 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`na`
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `[Fusion 360 / Tinkercad / other]` | `[Link or screenshot]` | `[What did you validate?]` |
-| `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
+| `[Fusion 360 / Tinkercad / other]` | `[Link or screenshot]` | `NA` |
+| `[Tool]` | `[Link or screenshot]` | `NA` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[Write here]`
+`NA`
 
 ---
 
@@ -349,14 +350,18 @@ What changed after the CAD, animation, or simulation stage?
 | Component | Quantity | Purpose |
 |---|---:|---|
 | `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `[Buttons]` | `[8]` | `[Control]` |
+| `[LED strips` | `[150 pixels]` | `display grid and gameplay` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
 
 **Response:**  
-`[Write here]`
+`Buttons connected to ESP-32 pins.  
+LED strips connected to ESP-32 pins for data control.  
+Buzzer connected to ESP-32 pin.  
+All components share common ground.
+Breadboard power supply`
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
@@ -368,10 +373,10 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Question | Response |
 |---|---|
-| Power source | `[USB / battery / adapter / other]` |
-| Voltage required | `[Write here]` |
-| Current concerns | `[Write here]` |
-| Safety concerns | `[Write here]` |
+| Power source | `adapter/breadboard ps` |
+| Voltage required | `5 volts` |
+| Current concerns | `na` |
+| Safety concerns | `can be too much fun` |
 
 ---
 
@@ -381,8 +386,7 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform | Purpose |
 |---|---|
-| `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `[Purpose]` |
-| `[Tool]` | `[Purpose]` |
+| `[MicroPython]` | `[Code to run the game]` |
 
 ## 10.2 Software Logic
 Describe what the code must do.
@@ -397,7 +401,12 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[Write here]`
+`On startup, system waits for both players to be ready.  
+The puck moves across the grid.  
+Buttons are read continuously.  
+Correct input reflects the puck.  
+Wrong input or delay reduces lives.  
+Game resets when a player loses all lives.`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -427,7 +436,7 @@ Suggested sequence:
 
 ## 11.1 Is an app part of this project?
 - [ ] Yes
-- [ ] No
+- [x] No
 
 If yes, complete this section.
 
@@ -443,7 +452,7 @@ Examples:
 - displaying data.
 
 **Response:**  
-`[Write here]`
+`[NA]`
 
 ## 11.3 App Features
 
@@ -474,9 +483,12 @@ Insert a sketch or screenshot of the app interface.
 
 | Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
 |---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
+| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Control]` |
+| `[LED Strip]` | `150 pixels` | `yes` | `yes` | `500` | `na` | `[Display grid]` |
+| `Tactile push buttons` | `8` | `yes` | `yes` | `50` | `na` | `tactile control` |
+| `Buzzer` | `1` | `yes` | `no` | `0` | `na` | `sound feedback` |
+| `Power supply` | `1` | `yes` | `yes` | `150` | `na` | `...to supply power` |
+
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -488,31 +500,36 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`[Write here]`
+`The LED strips were chosen because they provide clear visual feedback and allow precise control of individual positions on the grid, making them ideal for representing the puck and game state.
+The ESP32 was selected as the main controller due to its sufficient GPIO pins, fast processing, and compatibility with MicroPython, which simplifies development and testing.
+Push buttons were used as input because they provide fast and direct interaction, which is essential for a reaction-based game.
+A buzzer was included to give immediate audio feedback, helping players understand mistakes and increasing the intensity of gameplay.
+The structure will be made using foam board to ensure durability during repeated play and to securely hold the LED grid and buttons in place while also being lightweight.`
 
 ## 12.3 Items to Purchase Separately
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `buttons` | `not enough in kit` | `[na]` | `[na]` | `[na]` |
+| `led strip` | `not enough in kit` | `[na]` | `[na]` | `[na]` |
+| `power supply` | `stolen` | `[na]` | `[na]` | `[na]` |
 
 ## 12.4 Budget Summary
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `[Cost]` |
-| Mechanical parts | `[Cost]` |
-| Fabrication materials | `[Cost]` |
-| Purchased extras | `[Cost]` |
-| Contingency | `[Cost]` |
-| **Total** | `[Cost]` |
+| Electronics | `800` |
+| Mechanical parts | `[na]` |
+| Fabrication materials | `[na]` |
+| Purchased extras | `[200]` |
+| Contingency | `[]` |
+| **Total** | `[1000]` |
 
 ## 12.5 Budget Reflection
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
-`[Write here]`
+`justified cost`
 
 ---
 
@@ -529,32 +546,32 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write here]`
+`Tasks were divided equally based on strengths and skills. Decisions were made in unison after discussions. Progress was checked by keeping set goals. If task was delayed, we simply did it later. Through the repository and short videos clips and photos.`
 
 ## 13.2 Task Breakdown
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| T1 | `[Finalize concept]` | `aryaa and shravani` | `3` | `2nd april` | `None` | `done` |
+| T2 | `[Complete BOM]` | `huh?` | `1` | `[Date]` | `T1` | `To Do` |
+| T3 | `[Test electronics]` | `Aryaa` | `8` | `na` | `T1` | `done` |
+| T4 | `[Build structure]` | `Shravani` | `8` | `17th april` | `T3` | `done` |
+| T5 | `[Write control code]` | `Aryaa` | `4` | `na` | `T3` | `done` |
+| T6 | `[Integrate system]` | `aryaa and shravani` | `6` | `na` | `T3, T4, T5` | `done` |
+| T7 | `[Playtest]` | `aryaa and shravani` | `2` | `20th april` | `all` | `done` |
+| T8 | `[Refine and document]` | `aryaa and shravani` | `3` | `21st april` | `all` | `done` |
 
 ## 13.3 Responsibility Split
 
 | Area | Main Owner | Support Owner |
 |---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Concept and gameplay | `Aryaa and shravani` | `na` |
+| Electronics | `Aryaa` | `shravani` |
+| Coding | `aryaa` | `shravani` |
+| App | `na` | `na` |
+| Mechanical build | `Shravani` | `Aryaa` |
+| Testing | `aryaa and shravani` | `na` |
+| Documentation | `aryaa and shravani` | `na` |
 
 ---
 
@@ -564,25 +581,25 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [ ] Idea finalized
-- [ ] Core interaction decided
-- [ ] Sketches made
+- [x] Idea finalized
+- [x] Core interaction decided
+- [x] Sketches made
 - [ ] BOM completed
-- [ ] Purchase needs identified
+- [x] Purchase needs identified
 - [ ] Key uncertainty identified
 - [ ] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
-- [ ] Electronics tests completed
+- [x] Electronics tests completed
 - [ ] CAD / structure planning completed
 - [ ] App UI started if needed
 - [ ] Mechanical concept tested
-- [ ] Main subsystems partially working
+- [x] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
-- [ ] Physical body built
+- [x] Physical body built
 - [ ] Electronics integrated
 - [ ] Code connected to hardware
 - [ ] App connected if required
@@ -590,20 +607,20 @@ Expected outcomes:
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
-- [ ] Technical bugs reduced
-- [ ] Playtesting completed
-- [ ] Improvements made
-- [ ] Documentation completed
-- [ ] Final build ready
+- [x] Technical bugs reduced
+- [x] Playtesting completed
+- [x] Improvements made
+- [x] Documentation completed
+- [x] Final build ready
 
 ## 14.2 Weekly Update Log
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `ideate` | `we did it` | `[Write here]` | `[Write here]` |
+| Week 2 | `test components` | `we did it` | `[Write here]` | `[Write here]` |
+| Week 3 | `finish project` | `oops` | `[Write here]` | `[Write here]` |
+| Week 4 | `finalize project` | `we did it` | `na` | `(get an O?)` |
 
 ---
 
