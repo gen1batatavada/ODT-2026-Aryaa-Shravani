@@ -58,8 +58,8 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Aryaa Goel` | `Coding` | `Electronics` | `[Write here]` |
-| `Shravani Budage` | `Fabrication` | `Mechanics` | `[Write here]` |
+| `Aryaa Goel` | `Coding` | `Electronics` | `coding, material handling, knowledge of electric components` |
+| `Shravani Budage` | `Fabrication` | `Mechanics` | `mechanics, game logistics, material handling ` |
 
 ## 1.3 Project Title
 `The Rupinator`
