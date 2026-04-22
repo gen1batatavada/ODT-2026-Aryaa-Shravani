@@ -175,13 +175,13 @@ Describe exactly how a player will use the project.
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `Rule 1:You must play with one hand only.`
+- `Rule 1: You must play with one hand only.`
 - `Rule 2: Both player must press any button to begin. `
 - `Rule 3: The blue light is the puck.`
 - `Rule 4: You have 5 lives.`
-- `Rule 5:Defend your goal by pressing the respective button.`
-- `Rule 6:You have HALF a second to react before you lose a life.`
-- `Rule 7:Pressing more that 1 button at once costs you lives.`
+- `Rule 5: Defend your goal by pressing the respective button.`
+- `Rule 6: You have HALF a second to react before you lose a life.`
+- `Rule 7: Pressing more that 1 button at once costs you lives.`
 
 ---
 
@@ -432,7 +432,109 @@ Suggested sequence:
 ## 10.4 Pseudocode
 
 ```text
-[Write your pseudocode here]
+- CONNECTIONS:
+  LED GRID: PIN D4
+  BUZZER: PIN D23
+  PURPLE BUTTONS: D12, D13, D14, D27
+  PURPLE LED LIFE: D25
+  YELLOW BUTTONS: D18, D19, D21, D22
+  YELLOW LED LIFE: D26
+
+- Import required libraries for hardware control and timing
+
+- LED grid setup:
+  Define grid dimensions (14 x 10)
+  Initialize LED grid
+
+- Life strips:
+  Initialize LED strips for player lives
+
+- Colour key:
+  Define colors for players, puck, and off state
+
+- Win colours:
+  Define colors used for win animation
+
+- Buzzer:
+  Initialize buzzer using PWM
+
+- Buttons:
+  Initialize player buttons with pull-up resistors
+
+- Grid mapping:
+  Convert 2D coordinates (x, y) into LED index (serpentine layout)
+
+- Fill grid:
+  Set all LEDs to a single color
+
+- Reset game:
+  Reset lives, puck position, direction, timers, and ready states
+
+- Game over:
+  Turn off buzzer
+  Turn off life LEDs
+  Flash winner color
+  Reset game
+
+- Draw lives:
+  Update LED strips based on remaining lives
+
+- Movement:
+  Store last direction
+  Generate new random direction
+  Avoid repeating the same direction
+
+- State:
+  Initialize lives, puck position, direction, speed, and flags
+
+- Draw system:
+  Clear grid
+  Draw goal areas
+  Draw puck
+  Update display
+
+- Main loop:
+  Check if any player has lost
+  Read button inputs
+
+- Ready phase:
+  Wait for both players to press a button
+  Show ready state visually
+  Start game when both ready
+
+- Multi-press detection:
+  If multiple buttons pressed → lose life + sound
+
+- Goal detection:
+  Check if puck is at left or right goal
+
+- Goal logic:
+  Start timer when puck reaches goal
+  Activate buzzer after delay
+  If no response in time → lose life
+  Reset puck position
+
+- Reflection:
+  If correct button pressed → change direction and reflect puck
+
+- Normal movement:
+  Move puck using dx, dy
+  Reset timers
+  Stop buzzer if active
+
+- Boundary handling:
+  Reflect puck on top/bottom walls
+  Reflect puck on left/right edges
+
+- Speed control:
+  Gradually increase speed
+  Limit minimum speed
+
+- Update display:
+  Draw grid and lives
+
+- Delay:
+  Wait based on current speed
 ```
 
 ---
