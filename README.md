@@ -58,7 +58,7 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Aryaa Goel` | `Coding` | `Electronics` | `coding, material handling, knowledge of electric components` |
+| `Aryaa Goel` | `Coding` | `Electronics` | `coding, game logistics, knowledge of electric components` |
 | `Shravani Budage` | `Fabrication` | `Mechanics` | `mechanics, game logistics, material handling ` |
 
 ## 1.3 Project Title
@@ -126,7 +126,7 @@ List what inspired the project.
 |---|---|---|
 | `Game: ATARI BREAKOUT ` | `https://elgoog.im` | `Reflection mechanism` |
 | `Game: AIR HOCKEY ` | `NA` | `Goal mechanism, flow of puck` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+
 
 ## 3.2 Original Twist
 What makes your project original?
@@ -263,7 +263,11 @@ The LED grid visually represents this movement, making the abstract coordinate s
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`<img width="2304" height="4096" alt="odt initial sketch 1" src="https://github.com/user-attachments/assets/9b3629df-793a-4fc4-8193-30b56216ff8e" />
+<img width="2304" height="4096" alt="odt initial sketch 2" src="https://github.com/user-attachments/assets/fbc2871f-621a-43d0-925a-4d0012394c2d" />
+<img width="2304" height="4096" alt="odt sketch 3" src="https://github.com/user-attachments/assets/61323737-70ee-40e7-a6e9-61a5d0d242c7" />
+<img width="2304" height="4096" alt="odt sketch 4" src="https://github.com/user-attachments/assets/daa3cc81-1285-410b-98e4-fdde2fd69fae" />
+`
 
 Example:
 ```md
@@ -279,7 +283,7 @@ Add a sketch with labels showing:
 - output elements.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`<img width="2160" height="2999" alt="odt sketch " src="https://github.com/user-attachments/assets/8e8a2198-51c3-46d7-98e9-cdc84b0cc6c1" />`
 
 ## 7.3 Approximate Dimensions
 
@@ -367,7 +371,8 @@ Breadboard power supply`
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`[<img width="1536" height="1024" alt="circuit diagram" src="https://github.com/user-attachments/assets/c36bf58e-b343-47b8-8f64-7a1229d5a5c6" />
+]`
 
 ## 9.4 Power Plan
 
@@ -422,7 +427,7 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`<img width="486" height="579" alt="code logic" src="https://github.com/user-attachments/assets/163dc735-4d17-4847-9b1e-be738e56b628" />`
 
 ## 10.4 Pseudocode
 
@@ -518,11 +523,11 @@ The structure will be made using foam board to ensure durability during repeated
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `800` |
+| Electronics | `700` |
 | Mechanical parts | `[na]` |
 | Fabrication materials | `[na]` |
 | Purchased extras | `[200]` |
-| Contingency | `[]` |
+| Contingency | `[100]` |
 | **Total** | `[1000]` |
 
 ## 12.5 Budget Reflection
@@ -686,15 +691,15 @@ Balancing speed and reaction time to make the game challenging but fair.`
 
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
-| `[Date]` | `[Describe issue]` | `[Technical / Mechanical / UI / Gameplay]` | `[What you did]` | `[Worked / Partly / Failed]` | `[Next step]` |
-| `[Date]` | `[Describe issue]` | `[Type]` | `[What you did]` | `[Result]` | `[Next step]` |
+| `[19th april]` | `[Puck following repetitive paths]` | `[Code]` | `[Introduced a tracking variable to prevent repeated dy values and increase movement variation]` | `[Partly ]` | `[Next step]` |
+
 
 ## 16.4 Playtesting Notes
 
 | Tester | What They Did | What Confused Them | What They Enjoyed | What You Will Change |
 |---|---|---|---|---|
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
+| `Peer `| `Pressed buttons quickly and tried to react to the puck` | `Unsure which button matched which position at first` | `The fast pace and increasing speed` | `Improve button labeling and clarity of positions` |
+| `Classmate `| `Played multiple rounds and experimented with timing `| `Confused when multiple button presses caused life loss` | `The competitive aspect and sound feedback` | `Refine multi-button detection and add clearer feedback` |
 
 ---
 
@@ -731,7 +736,9 @@ Example:
 
 
 
-```
+`https://youtube.com/playlist?list=PL4JGkjtThKAybNwVNTBHabvhCf9uQMVt3&si=zx5lyssDiKFPL7Zs
+<img width="4096" height="2304" alt="odt circuit connections" src="https://github.com/user-attachments/assets/991ad775-477b-4d32-86ca-eca6e6748d93" />
+`
 
 ## 17.3 Version History
 
@@ -826,24 +833,24 @@ Finally, we would conduct more play testing with different users to gather feedb
 # 20. Final Submission Checklist
 
 Before submission, confirm that:
-- [ ] Team details are complete
-- [ ] Project description is complete
-- [ ] Inspiration sources are included
-- [ ] Player journey is written
-- [ ] Sketches are added
-- [ ] BOM is complete
-- [ ] Purchase list is complete
-- [ ] Budget summary is complete
+- [x] Team details are complete
+- [x] Project description is complete
+- [x] Inspiration sources are included
+- [x] Player journey is written
+- [x] Sketches are added
+- [x] BOM is complete
+- [x] Purchase list is complete
+- [x] Budget summary is complete
 - [ ] Mechanical planning is documented if applicable
 - [ ] App planning is documented if applicable
-- [ ] Code flowchart is added
-- [ ] Task breakdown is complete
-- [ ] Weekly logs are updated
-- [ ] Risk register is complete
-- [ ] Testing log is updated
-- [ ] Playtesting notes are included
-- [ ] Build photos are included
-- [ ] Final reflection is written
+- [x] Code flowchart is added
+- [x] Task breakdown is complete
+- [x] Weekly logs are updated
+- [x] Risk register is complete
+- [x] Testing log is updated
+- [x] Playtesting notes are included
+- [x] Build photos are included
+- [x] Final reflection is written
 
 ---
 
