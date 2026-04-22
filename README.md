@@ -737,9 +737,9 @@ Example:
 
 | Version | Date | What Changed | Why |
 |---|---|---|---|
-| `v1` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v2` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v3` | `[Date]` | `[Describe]` | `[Reason]` |
+| `v1` | `[w2]` | `Basic prototype` | `LED strip with moving puck and simple logic,  to test core idea` |
+| `v2` | `[w3]` | `Added buttons, goal detection, and lives system` | ` To enable gameplay and competition` |
+| `v3` | `[w4]` | `Full grid, sound feedback, speed tuning, and bug fixes` | `To create a complete and playable game` |
 
 ---
 
@@ -749,23 +749,25 @@ Example:
 Describe the final version of your project.
 
 **Response:**  
-`[Write here]`
+`The Rupinator is a two player LED based reaction game inspired by air hockey and arcade games. A moving light acts as the puck and travels across a 2D grid. Players use buttons to deflect the puck and must react within a short time window.
+
+The game includes a life system, sound feedback, increasing speed, and a restart mechanism. It creates a fast-paced, competitive experience focused on timing and precision.`
 
 ## 18.2 What Works Well
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `The game runs smoothly and is fully playable ` 
+- `The puck movement is clear and increases in speed effectively ` 
+- `The sound system provides good feedback and enhances gameplay ` 
 
 ## 18.3 What Still Needs Improvement
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- ` The tactile buttons on the physical model need better placement and feel `  
+- ` The multi-button press detection in the code is not fully reliable `  
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
 
 **Response:**  
-`[Write here]`
+`The original idea was a simple LED based puck movement system. Over time, it evolved into a competitive two player game with button controls, a life system, sound feedback, and increasing difficulty.
+The design shifted from a basic concept to a more refined and engaging gameplay experience through multiple iterations and testing.`
 
 ---
 
@@ -777,7 +779,9 @@ What slowed you down?
 How well did you manage time, tasks, and responsibilities?
 
 **Response:**  
-`[Write here]`
+`Our team worked very well together, constantly sharing and building on each other’s ideas. We had different strengths, which helped us collaborate effectively. When one person was weaker in a particular area, the other helped them understand it, leading to better learning for both of us.
+Tasks were divided evenly based on our strengths, which made the workflow efficient. This allowed us to progress steadily without major conflicts or confusion.
+At times, we were slowed down by debugging and refining the code, especially when dealing with input handling. However, we managed our time and responsibilities well overall, and were able to complete the project successfully in time.`
 
 ## 19.2 Technical Reflection
 What did you learn about:
@@ -788,7 +792,10 @@ What did you learn about:
 - integration?
 
 **Response:**  
-`[Write here]`
+`Through this project, we learned how to integrate multiple systems including LEDs, buttons, and a buzzer using the ESP32. We gained a deeper understanding of MicroPython and how to structure code for real time interaction.
+One of the most significant learnings was mapping a 2D coordinate grid onto a serpentine LED strip and controlling movement using directional logic. Implementing features like collision detection, timing, and input handling helped us understand how code can directly control physical behaviour if used logically.
+Initially, combining design and electronics in such a seamless and interactive way felt almost impossible. However, as we progressed, we began to see how design decisions and technical implementation could work together. The visual layout of the grid, the responsiveness of the buttons, and the feedback from the buzzer all came together to create a cohesive experience.
+We also learned the importance of debugging, testing and iteration, especially when dealing with issues like button reliability and timing. Overall, this project helped us bridge the gap between design thinking and technical execution, making something that once seemed complex feel achievable.`
 
 ## 19.3 Design Reflection
 What did you learn about:
@@ -800,13 +807,19 @@ What did you learn about:
 - iteration?
 
 **Response:**  
-`[Write here]`
+`Through this project, we learned the importance of designing for clarity and immediate understanding. The game needed to be intuitive, so players could quickly understand what to do without long explanations. This influenced how we designed the LED grid, button layout, and visual feedback.
+We realized that small design decisions had a big impact on the player experience. The speed of the puck, the reaction time, and the placement of buttons all affected how challenging and enjoyable the game felt. Iterating on these elements helped us balance difficulty and playability.
+We also learned how important feedback is in interactive design. The combination of light and sound made the game more engaging and helped players understand their actions instantly. Without clear feedback, the experience would feel confusing or unresponsive.
+Overall, this project taught us how to design for interaction, not just appearance. We learned how to create a system that is intuitive, responsive, and enjoyable, while continuously refining it based on testing and observation.`
 
 ## 19.4 If You Had One More Week
 What would you improve next?
 
 **Response:**  
-`[Write here]`
+`If we had one more week, we would focus on improving the physical build quality, especially the placement and feel of the buttons to make the interaction more comfortable and reliable.
+We would also refine the game logic further, particularly the detection of multiple button presses, to make the system more consistent. Additionally, we would continue tuning the speed and difficulty to achieve a better balance between challenge and playability.
+We would also add more visual and sound effects, such as smoother transitions, animations, or different tones or even background music to enhance the overall experience.
+Finally, we would conduct more play testing with different users to gather feedback and make improvements based on how people interact with the game.`
 
 ---
 
