@@ -150,10 +150,10 @@ Examples:
 
 | Question | Response |
 |---|---|
-| Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
-| Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
+| Who is this for? | `Arcade enthusiasts` |
+| Age range | `5+` |
+| Solo or multiplayer | `Multiplayer` |
+| Expected duration of one round | `1 minute 30 seconds` |
 | What should the player feel? | `[Write here]` |
 | Is explanation required before use? | `[Write here]` |
 
